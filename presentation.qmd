@@ -1,0 +1,55 @@
+---
+title: "Snowflake & Stars"
+subtitle: "Datenbank-Schemata"
+lang: de-DE
+date: today
+date-format: DD.MM.YYYY
+authors:
+  - Joachim Kern
+  - Maik Jökel
+  - Paul Höhne
+  - Dominik Wiegandt
+format:
+  revealjs:
+    logo: dhbw-logo.jpg
+    mermaid-format: svg
+    mermaid:
+      theme: neutral
+    toc: true
+    # width: 1920
+    # height: 1080
+    theme: [serif, custom.scss]
+    slide-number: true
+    preview-links: auto
+    # transition-speed: fast
+    transition: none
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: false
+    auto-animate-duration: 0.8
+    revealjs-plugins:
+      - attribution
+      - fullscreen
+    template-partials: 
+      - partials/title-slide.html
+filters:
+  # - reveal-auto-agenda
+  - roughnotation
+auto-agenda:
+  # bullets: numbered
+  heading: Agenda
+---
+
+# Stern-Schema
+
+## ER-Beispiel {.fullscreen .c-stretch}
+
+<img src="star_schema_example.svg" class="f-stretch" />
+
+## Vor- und Nachteile {.c-stretch}
+
+|Vorteile       |Nachteile|
+|---------------|----------|
+|<span class="text-green">Simpel</span> |<span class="text-red">Redundanzen</span>|
+|<span class="text-green">Schneller Zugriff</span>| <span class="text-red">Anfällig für Anomalien</span>|
+
+: {.stretch .center .f-stretch}
