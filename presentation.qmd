@@ -38,12 +38,18 @@ auto-agenda:
   # bullets: numbered
   heading: Agenda
 ---
+# Einführung
+- Relationale Datenmodellierungstechniken
+- Für Data-Warehouse: "OLAP" - Analysen
+- Modelle zum Speichern von:
+  - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
+  - Eigenschaften der Fakten (Detailstufen)
 
 # Stern-Schema
 
 ## ER-Beispiel {.fullscreen .c-stretch}
 
-<img src="star_schema_example.svg" class="f-stretch" />
+<img src="erm_star.svg" class="f-stretch" />
 
 ## Vor- und Nachteile {.c-stretch}
 
@@ -53,3 +59,34 @@ auto-agenda:
 |<span class="text-green">Schneller Zugriff</span>| <span class="text-red">Anfällig für Anomalien</span>|
 
 : {.stretch .center .f-stretch}
+
+# Snowflake-Schema
+
+## Eigenschaften
+- Baut auf Star-Schema auf
+  - Ebenfalls zentrale Faktentabelle
+- Dimensionstabellen sind normalisiert
+- Durch **Normalisierung** ergeben sich weitere Hierarchiestufen
+- Ergibt die Form einer Schneeflocke
+
+## ER-Diagramm
+
+<img src="erm_snowflake.svg" class="f-stretch" />
+
+## Vor- und Nachteile
+|Vorteile       |Nachteile|
+|---------------|----------|
+|<span class="text-green">Schnelle Abfragen auf einzelne Dimensionstabellen</span> |<span class="text-red">Detailierte Abfragen sind durch Joins langsamer</span>|
+|<span class="text-green">Geringe Redundanz -> Geringerer Speicherbedarf</span>| <span class="text-red">Unübersichtliche</span>|
+|<span class="text-green">Vermeidet Änderungsanomalien</span>| |
+
+# Vergleich
+
+|Kriterium  |Star-Schema       |Snowflake-Schema|
+|---|---------------|----------|
+| Struktur | Eine Faktentabelle, mehrere Dimensionstabellen | Eine Faktentabelle, mehrere Dimensionstabellen mit mehreren Ebenen |
+| Daten-Redundanz | Höhere Redundanz durch nicht-normalisierte Dimensionstabellen | Vermeidet Redundanz durch normalisierte Dimensionstabellen |
+| Performance | Schnellere Abfragen durch weniger Joins | Langsamere Abfragen durch mehr Joins |
+| Speicherbedarf | Höher (Redundanz) | Geringer (Normalisierung) |
+
+: {.smaller}
