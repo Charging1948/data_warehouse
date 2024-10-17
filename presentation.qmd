@@ -5,10 +5,10 @@ lang: de-DE
 date: today
 date-format: DD.MM.YYYY
 authors:
-  - Joachim Kern
-  - Maik Jökel
-  - Paul Höhne
-  - Dominik Wiegandt
+  - 5210813
+  - 4242301
+  - 3142030
+  - 2543204
 format:
   revealjs:
     logo: dhbw-logo.jpg
