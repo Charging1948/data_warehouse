@@ -51,8 +51,13 @@ nocite: |
 ## Dimensionsmodell
 <img src="Data-Cube-mit-Hirarchie.png">
 
-::: {.attribution}
-Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png
+::: {.attribution .smaller}
+Quelle: @data-cube-hierarchie
+:::
+
+:::{.notes}
+- Notizen
+- Test
 :::
 
 # Stern-Schema
@@ -102,6 +107,8 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 
 # Vergleich
 
+## Vergleich
+
 |Kriterium  |Star-Schema       |Snowflake-Schema|
 |---|---------------|----------|
 | Struktur | Alle Dimensionstabellen sind mit der Faktentabelle verbunden | Eine Faktentabelle, mehrere Ebenen an  Dimensionstabellen um die Faktentabelle |
@@ -112,7 +119,7 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 : {.smaller .f-stretch}
 
 
-# Galaxy-Schema
+## Galaxy-Schema
 
 - Auch Fact Constellation-Schema genannt
 - Erweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen
