@@ -47,9 +47,11 @@ auto-agenda:
 
 # Stern-Schema
 
-## ER-Beispiel {.fullscreen .c-stretch}
+## ER-Beispiel
 
 <img src="erm_star.svg" class="f-stretch" />
+
+: {.fullscreen .c-stretch}
 
 ## Vor- und Nachteile {.c-stretch}
 
@@ -69,9 +71,11 @@ auto-agenda:
 - Durch **Normalisierung** ergeben sich weitere Hierarchiestufen
 - Ergibt die Form einer Schneeflocke
 
-## ER-Diagramm
+## ER-Diagramm 
 
-<img src="erm_snowflake.svg" class="f-stretch" />
+<img src="erm_snowflake.svg" class="f-stretch" /> 
+
+: {.fullscreen .c-stretch}
 
 ## Vor- und Nachteile
 |Vorteile       |Nachteile|
@@ -84,9 +88,14 @@ auto-agenda:
 
 |Kriterium  |Star-Schema       |Snowflake-Schema|
 |---|---------------|----------|
-| Struktur | Eine Faktentabelle, mehrere Dimensionstabellen | Eine Faktentabelle, mehrere Dimensionstabellen mit mehreren Ebenen |
+| Struktur | Alle Dimensionstabellen sind mit der Faktentabelle verbunden | Eine Faktentabelle, mehrere Ebenen an  Dimensionstabellen um die Faktentabelle |
 | Daten-Redundanz | Höhere Redundanz durch nicht-normalisierte Dimensionstabellen | Vermeidet Redundanz durch normalisierte Dimensionstabellen |
 | Performance | Schnellere Abfragen durch weniger Joins | Langsamere Abfragen durch mehr Joins |
 | Speicherbedarf | Höher (Redundanz) | Geringer (Normalisierung) |
 
 : {.smaller}
+
+# Galaxy-Schema
+
+- Auch Fact Constellation-Schema genannt
+- Erweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen
