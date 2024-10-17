@@ -37,6 +37,9 @@ filters:
 auto-agenda:
   # bullets: numbered
   heading: Agenda
+bibliography: literatur.bib
+nocite: |
+       @noauthor2024Architectinga
 ---
 # Einführung
 - Datenmodellierungstechniken
@@ -45,7 +48,7 @@ auto-agenda:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
   - Eigenschaften der Fakten (Detailstufen)
 
-# Dimensionsmodell
+## Dimensionsmodell
 <img src="Data-Cube-mit-Hirarchie.png">
 
 ::: {.attribution}
@@ -116,6 +119,10 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 
 # Fragen?
 Gibt es noch Fragen?
+
+# Quellen
+::: {#refs}
+:::
 
 ---
 <img src="snowflake-schema-120723_0.png">
