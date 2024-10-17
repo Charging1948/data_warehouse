@@ -57,8 +57,6 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 
 <img src="erm_star.svg" class="f-stretch" />
 
-: {.fullscreen .c-stretch}
-
 ## Vor- und Nachteile
 
 |Vorteile       |Nachteile|
