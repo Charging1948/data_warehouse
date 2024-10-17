@@ -85,7 +85,7 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 |Vorteile       |Nachteile|
 |---------------|----------|
 |<span class="text-green">Schnelle Abfragen auf einzelne Dimensionstabellen</span> |<span class="text-red">Detailierte Abfragen sind durch Joins langsamer</span>|
-|<span class="text-green">Geringe Redundanz -> Geringerer Speicherbedarf</span>| <span class="text-red">Unübersichtliche</span>|
+|<span class="text-green">Geringe Redundanz -> Geringerer Speicherbedarf</span>| <span class="text-red">Unübersichtlicher</span>|
 |<span class="text-green">Vermeidet Änderungsanomalien</span>| |
 
 : {.f-stretch}
