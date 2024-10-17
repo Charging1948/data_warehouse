@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "presentation.html#eigenschaften",
+    "href": "presentation.html#eigenschaften",
+    "title": "Snowflake & Stars",
+    "section": "Eigenschaften",
+    "text": "Eigenschaften\n\nEine Faktentabelle\nMaximale Dimensionsstufe 1\nTabellen sind denormalisiert\nOptimiert auf Leseoperationen"
+  },
+  {
     "objectID": "presentation.html#er-beispiel",
     "href": "presentation.html#er-beispiel",
     "title": "Snowflake & Stars",
@@ -14,8 +21,8 @@
     "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSimpel\nRedundanzen\n\n\nSchneller Zugriff\nAnfällig für Anomalien"
   },
   {
-    "objectID": "presentation.html#eigenschaften",
-    "href": "presentation.html#eigenschaften",
+    "objectID": "presentation.html#eigenschaften-1",
+    "href": "presentation.html#eigenschaften-1",
     "title": "Snowflake & Stars",
     "section": "Eigenschaften",
     "text": "Eigenschaften\n\nBaut auf Star-Schema auf\n\nEbenfalls zentrale Faktentabelle\n\nDimensionstabellen sind normalisiert\nDurch Normalisierung ergeben sich weitere Hierarchiestufen\nErgibt die Form einer Schneeflocke"
