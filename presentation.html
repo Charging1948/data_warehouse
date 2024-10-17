@@ -380,29 +380,12 @@
 <nav role="doc-toc"> 
 <h2 id="toc-title">Inhaltsverzeichnis</h2>
 <ul>
-<li><a href="#/einführung" id="/toc-einführung">Einführung</a>
-<ul>
-<li><a href="#/dimensionsmodell" id="/toc-dimensionsmodell">Dimensionsmodell</a></li>
-</ul></li>
-<li><a href="#/stern-schema" id="/toc-stern-schema">Stern-Schema</a>
-<ul>
-<li><a href="#/eigenschaften" id="/toc-eigenschaften">Eigenschaften</a></li>
-<li><a href="#/er-beispiel" id="/toc-er-beispiel">ER-Beispiel</a></li>
-<li><a href="#/vor--und-nachteile" id="/toc-vor--und-nachteile">Vor- und Nachteile</a></li>
-</ul></li>
-<li><a href="#/snowflake-schema" id="/toc-snowflake-schema">Snowflake-Schema</a>
-<ul>
-<li><a href="#/eigenschaften-1" id="/toc-eigenschaften-1">Eigenschaften</a></li>
-<li><a href="#/er-diagramm" id="/toc-er-diagramm">ER-Diagramm</a></li>
-<li><a href="#/vor--und-nachteile-1" id="/toc-vor--und-nachteile-1">Vor- und Nachteile</a></li>
-</ul></li>
+<li><a href="#/einführung" id="/toc-einführung">Einführung</a></li>
+<li><a href="#/stern-schema" id="/toc-stern-schema">Stern-Schema</a></li>
+<li><a href="#/snowflake-schema" id="/toc-snowflake-schema">Snowflake-Schema</a></li>
 <li><a href="#/vergleich" id="/toc-vergleich">Vergleich</a></li>
-<li><a href="#/galaxy-schema" id="/toc-galaxy-schema">Galaxy-Schema</a></li>
 <li><a href="#/fragen" id="/toc-fragen">Fragen?</a></li>
-<li><a href="#/quellen" id="/toc-quellen">Quellen</a>
-<ul>
-<li></li>
-</ul></li>
+<li><a href="#/quellen" id="/toc-quellen">Quellen</a></li>
 </ul>
 </nav>
 </section>
@@ -419,12 +402,28 @@
 </ul></li>
 </ul>
 </section>
-<section id="dimensionsmodell" class="slide level2">
+<section id="dimensionsmodell" class="slide level2 fullscreen">
 <h2>Dimensionsmodell</h2>
 
 <img src="Data-Cube-mit-Hirarchie.png" class="r-stretch"><div class="attribution">
-<p>Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png</p>
+<p>Quelle: <span class="citation" data-cites="data-cube-hierarchie"><a href="#/quellen" role="doc-biblioref" onclick="">[1]</a></span></p>
 </div>
+<aside class="notes">
+<ul>
+<li>Notizen</li>
+<li>Test</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="stern-schema" class="title-slide slide level1 center">
@@ -443,10 +442,10 @@
 <section id="er-beispiel" class="slide level2">
 <h2>ER-Beispiel</h2>
 
-<img src="erm_star.svg" class="f-stretch r-stretch"></section>
+<img src="erm_star.svg" class="r-stretch"></section>
 <section id="vor--und-nachteile" class="slide level2">
 <h2>Vor- und Nachteile</h2>
-<table class="center f-stretch caption-top">
+<table class="caption-top">
 <colgroup>
 <col style="width: 60%">
 <col style="width: 40%">
@@ -488,16 +487,11 @@
 </section>
 <section id="er-diagramm" class="slide level2">
 <h2>ER-Diagramm</h2>
-<dl>
-<dt><img src="erm_snowflake.svg" class="f-stretch"></dt>
-<dd>
-<p>{.fullscreen .c-stretch}</p>
-</dd>
-</dl>
-</section>
+
+<img src="erm_snowflake.svg" class="r-stretch"></section>
 <section id="vor--und-nachteile-1" class="slide level2">
 <h2>Vor- und Nachteile</h2>
-<table class="f-stretch caption-top">
+<table class="caption-top">
 <colgroup>
 <col style="width: 60%">
 <col style="width: 40%">
@@ -524,9 +518,14 @@
 </tbody>
 </table>
 </section></section>
+<section>
 <section id="vergleich" class="title-slide slide level1 center">
 <h1>Vergleich</h1>
-<table class="smaller f-stretch caption-top">
+
+</section>
+<section id="vergleich-1" class="slide level2">
+<h2>Vergleich</h2>
+<table class="smaller caption-top">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 53%">
@@ -563,15 +562,13 @@
 </tbody>
 </table>
 </section>
-
-<section id="galaxy-schema" class="title-slide slide level1 center">
-<h1>Galaxy-Schema</h1>
+<section id="galaxy-schema" class="slide level2">
+<h2>Galaxy-Schema</h2>
 <ul>
 <li>Auch Fact Constellation-Schema genannt</li>
 <li>Erweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen</li>
 </ul>
-</section>
-
+</section></section>
 <section id="fragen" class="title-slide slide level1 center">
 <h1>Fragen?</h1>
 <p>Gibt es noch Fragen?</p>
@@ -580,9 +577,12 @@
 <section>
 <section id="quellen" class="title-slide slide level1 smaller scrollable">
 <h1>Quellen</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-data-cube-hierarchie" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Data Science Blog, <em>Data Cube mit Hierarchie</em>. 2019. Zugegriffen: 17. Oktober 2024. [Online]. Verfügbar unter: <a href="https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png">https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png</a></div>
+</div>
 <div id="ref-noauthor2024Architectinga" class="csl-entry" role="listitem">
-Kumar, Anjani [Verfasser/in], Abhishek [Verfasser/in] Mishra, und Sanjeev [Verfasser/in] Kumar, Hrsg. 2024. <span>„Architecting a Modern Data Warehouse for Large Enterprises: Build Multi-cloud Modern Distributed Data Warehouses with Azure and AWS“</span>. Berkeley, CA: Apress.
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">A. [Verfasser/in]. Kumar, A. [Verfasser/in]. Mishra, und S. [Verfasser/in]. Kumar, Hrsg., <span>„Architecting a Modern Data Warehouse for Large Enterprises: Build Multi-cloud Modern Distributed Data Warehouses with Azure and AWS“</span>. Apress, Berkeley, CA, 2024.</div>
 </div>
 </div>
 </section>

@@ -4,7 +4,7 @@
     "href": "presentation.html#dimensionsmodell",
     "title": "Snowflake & Stars",
     "section": "Dimensionsmodell",
-    "text": "Dimensionsmodell\n\n\nQuelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png"
+    "text": "Dimensionsmodell\n\n\nQuelle: [1]\n\n\n\nNotizen\nTest"
   },
   {
     "objectID": "presentation.html#eigenschaften",
@@ -39,7 +39,7 @@
     "href": "presentation.html#er-diagramm",
     "title": "Snowflake & Stars",
     "section": "ER-Diagramm",
-    "text": "ER-Diagramm\n\n\n\n{.fullscreen .c-stretch}"
+    "text": "ER-Diagramm"
   },
   {
     "objectID": "presentation.html#vor--und-nachteile-1",
@@ -47,5 +47,19 @@
     "title": "Snowflake & Stars",
     "section": "Vor- und Nachteile",
     "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSchnelle Abfragen auf einzelne Dimensionstabellen\nDetailierte Abfragen sind durch Joins langsamer\n\n\nGeringe Redundanz -&gt; Geringerer Speicherbedarf\nUnübersichtlicher\n\n\nVermeidet Änderungsanomalien"
+  },
+  {
+    "objectID": "presentation.html#vergleich-1",
+    "href": "presentation.html#vergleich-1",
+    "title": "Snowflake & Stars",
+    "section": "Vergleich",
+    "text": "Vergleich\n\n\n\n\n\n\n\n\nKriterium\nStar-Schema\nSnowflake-Schema\n\n\n\n\nStruktur\nAlle Dimensionstabellen sind mit der Faktentabelle verbunden\nEine Faktentabelle, mehrere Ebenen an Dimensionstabellen um die Faktentabelle\n\n\nDaten-Redundanz\nHöhere Redundanz durch nicht-normalisierte Dimensionstabellen\nVermeidet Redundanz durch normalisierte Dimensionstabellen\n\n\nPerformance\nSchnellere Abfragen durch weniger Joins\nLangsamere Abfragen durch mehr Joins\n\n\nSpeicherbedarf\nHöher (Redundanz)\nGeringer (Normalisierung)"
+  },
+  {
+    "objectID": "presentation.html#galaxy-schema",
+    "href": "presentation.html#galaxy-schema",
+    "title": "Snowflake & Stars",
+    "section": "Galaxy-Schema",
+    "text": "Galaxy-Schema\n\nAuch Fact Constellation-Schema genannt\nErweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen"
   }
 ]
