@@ -12,5 +12,26 @@
     "title": "Snowflake & Stars",
     "section": "Vor- und Nachteile",
     "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSimpel\nRedundanzen\n\n\nSchneller Zugriff\nAnfällig für Anomalien"
+  },
+  {
+    "objectID": "presentation.html#eigenschaften",
+    "href": "presentation.html#eigenschaften",
+    "title": "Snowflake & Stars",
+    "section": "Eigenschaften",
+    "text": "Eigenschaften\n\nBaut auf Star-Schema auf\n\nEbenfalls zentrale Faktentabelle\n\nDimensionstabellen sind normalisiert\nDurch Normalisierung ergeben sich weitere Hierarchiestufen\nErgibt die Form einer Schneeflocke"
+  },
+  {
+    "objectID": "presentation.html#er-diagramm",
+    "href": "presentation.html#er-diagramm",
+    "title": "Snowflake & Stars",
+    "section": "ER-Diagramm",
+    "text": "ER-Diagramm"
+  },
+  {
+    "objectID": "presentation.html#vor--und-nachteile-1",
+    "href": "presentation.html#vor--und-nachteile-1",
+    "title": "Snowflake & Stars",
+    "section": "Vor- und Nachteile",
+    "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSchnelle Abfragen auf einzelne Dimensionstabellen\nDetailierte Abfragen sind durch Joins langsamer\n\n\nGeringe Redundanz -&gt; Geringerer Speicherbedarf\nUnübersichtliche\n\n\nVermeidet Änderungsanomalien"
   }
 ]

@@ -360,14 +360,35 @@
 <nav role="doc-toc"> 
 <h2 id="toc-title">Inhaltsverzeichnis</h2>
 <ul>
+<li><a href="#/einführung" id="/toc-einführung">Einführung</a></li>
 <li><a href="#/stern-schema" id="/toc-stern-schema">Stern-Schema</a>
 <ul>
 <li><a href="#/er-beispiel" id="/toc-er-beispiel">ER-Beispiel</a></li>
 <li><a href="#/vor--und-nachteile" id="/toc-vor--und-nachteile">Vor- und Nachteile</a></li>
 </ul></li>
+<li><a href="#/snowflake-schema" id="/toc-snowflake-schema">Snowflake-Schema</a>
+<ul>
+<li><a href="#/eigenschaften" id="/toc-eigenschaften">Eigenschaften</a></li>
+<li><a href="#/er-diagramm" id="/toc-er-diagramm">ER-Diagramm</a></li>
+<li><a href="#/vor--und-nachteile-1" id="/toc-vor--und-nachteile-1">Vor- und Nachteile</a></li>
+</ul></li>
+<li><a href="#/vergleich" id="/toc-vergleich">Vergleich</a></li>
 </ul>
 </nav>
 </section>
+<section id="einführung" class="title-slide slide level1 center">
+<h1>Einführung</h1>
+<ul>
+<li>Relationale Datenmodellierungstechniken</li>
+<li>Für Data-Warehouse: “OLAP” - Analysen</li>
+<li>Modelle zum Speichern von:
+<ul>
+<li>Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)</li>
+<li>Eigenschaften der Fakten (Detailstufen)</li>
+</ul></li>
+</ul>
+</section>
+
 <section>
 <section id="stern-schema" class="title-slide slide level1 center">
 <h1>Stern-Schema</h1>
@@ -376,7 +397,7 @@
 <section id="er-beispiel" class="slide level2 fullscreen c-stretch">
 <h2>ER-Beispiel</h2>
 
-<img src="star_schema_example.svg" class="f-stretch r-stretch"></section>
+<img src="erm_star.svg" class="f-stretch r-stretch"></section>
 <section id="vor--und-nachteile" class="slide level2 c-stretch">
 <h2>Vor- und Nachteile</h2>
 <table class="stretch center f-stretch caption-top">
@@ -401,6 +422,95 @@
 </tr>
 </tbody>
 </table>
+</section></section>
+<section>
+<section id="snowflake-schema" class="title-slide slide level1 center">
+<h1>Snowflake-Schema</h1>
+
+</section>
+<section id="eigenschaften" class="slide level2">
+<h2>Eigenschaften</h2>
+<ul>
+<li>Baut auf Star-Schema auf
+<ul>
+<li>Ebenfalls zentrale Faktentabelle</li>
+</ul></li>
+<li>Dimensionstabellen sind normalisiert</li>
+<li>Durch <strong>Normalisierung</strong> ergeben sich weitere Hierarchiestufen</li>
+<li>Ergibt die Form einer Schneeflocke</li>
+</ul>
+</section>
+<section id="er-diagramm" class="slide level2">
+<h2>ER-Diagramm</h2>
+
+<img src="erm_snowflake.svg" class="f-stretch r-stretch"></section>
+<section id="vor--und-nachteile-1" class="slide level2">
+<h2>Vor- und Nachteile</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="text-green">Schnelle Abfragen auf einzelne Dimensionstabellen</span></td>
+<td><span class="text-red">Detailierte Abfragen sind durch Joins langsamer</span></td>
+</tr>
+<tr class="even">
+<td><span class="text-green">Geringe Redundanz -&gt; Geringerer Speicherbedarf</span></td>
+<td><span class="text-red">Unübersichtliche</span></td>
+</tr>
+<tr class="odd">
+<td><span class="text-green">Vermeidet Änderungsanomalien</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section id="vergleich" class="title-slide slide level1 center">
+<h1>Vergleich</h1>
+<table class="smaller caption-top">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 53%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kriterium</th>
+<th>Star-Schema</th>
+<th>Snowflake-Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Struktur</td>
+<td>Eine Faktentabelle, mehrere Dimensionstabellen</td>
+<td>Eine Faktentabelle, mehrere Dimensionstabellen mit mehreren Ebenen</td>
+</tr>
+<tr class="even">
+<td>Daten-Redundanz</td>
+<td>Höhere Redundanz durch nicht-normalisierte Dimensionstabellen</td>
+<td>Vermeidet Redundanz durch normalisierte Dimensionstabellen</td>
+</tr>
+<tr class="odd">
+<td>Performance</td>
+<td>Schnellere Abfragen durch weniger Joins</td>
+<td>Langsamere Abfragen durch mehr Joins</td>
+</tr>
+<tr class="even">
+<td>Speicherbedarf</td>
+<td>Höher (Redundanz)</td>
+<td>Geringer (Normalisierung)</td>
+</tr>
+</tbody>
+</table>
 
 <div class="quarto-auto-generated-content">
 <p><img src="dhbw-logo.jpg" class="slide-logo"></p>
@@ -408,7 +518,7 @@
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
