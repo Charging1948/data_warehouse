@@ -45,6 +45,7 @@ auto-agenda:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
   - Eigenschaften der Fakten (Detailstufen)
 
+# Dimensionsmodell
 <img src="Data-Cube-mit-Hirarchie.png">
 
 ::: {.attribution}
@@ -52,6 +53,12 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 :::
 
 # Stern-Schema
+
+## Eigenschaften
+- Eine Faktentabelle
+- Maximale Dimensionsstufe 1
+- Tabellen sind denormalisiert
+- Optimiert auf Leseoperationen
 
 ## ER-Beispiel
 
@@ -75,9 +82,9 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 - Durch **Normalisierung** ergeben sich weitere Hierarchiestufen
 - Ergibt die Form einer Schneeflocke
 
-## ER-Diagramm 
+## ER-Diagramm
 
-<img src="erm_snowflake.svg" class="f-stretch" /> 
+<img src="erm_snowflake.svg" class="f-stretch" />
 
 : {.fullscreen .c-stretch}
 
@@ -106,3 +113,9 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 
 - Auch Fact Constellation-Schema genannt
 - Erweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen
+
+# Fragen?
+Gibt es noch Fragen?
+
+---
+<img src="snowflake-schema-120723_0.png">
