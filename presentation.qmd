@@ -16,6 +16,7 @@ format:
     mermaid:
       theme: neutral
     toc: true
+    toc-depth: 1
     # width: 1920
     # height: 1080
     theme: [serif, custom.scss]
@@ -34,24 +35,30 @@ format:
 filters:
   # - reveal-auto-agenda
   - roughnotation
-auto-agenda:
-  # bullets: numbered
-  heading: Agenda
-bibliography: literatur.bib
+# auto-agenda:
+#   bullets: numbered
+#   heading: Agenda
+bibliography: 
+  - literatur.bib
+  - bibliography.yaml
 nocite: |
        @noauthor2024Architectinga
+csl: ieee.csl
 ---
+
 # Einführung
+
 - Datenmodellierungstechniken
 - Für Data-Warehouse: "OLAP" - Anwendungen
 - Modelle zum Speichern von:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
   - Eigenschaften der Fakten (Detailstufen)
 
-## Dimensionsmodell
-<img src="Data-Cube-mit-Hirarchie.png">
+## Dimensionsmodell {.fullscreen}
 
-::: {.attribution .smaller}
+<img src="Data-Cube-mit-Hirarchie.png" >
+
+::: {.attribution}
 Quelle: @data-cube-hierarchie
 :::
 
@@ -63,6 +70,7 @@ Quelle: @data-cube-hierarchie
 # Stern-Schema
 
 ## Eigenschaften
+
 - Eine Faktentabelle
 - Maximale Dimensionsstufe: 1
 - Tabellen sind denormalisiert
@@ -70,7 +78,7 @@ Quelle: @data-cube-hierarchie
 
 ## ER-Beispiel
 
-<img src="erm_star.svg" class="f-stretch" />
+<img src="erm_star.svg" />
 
 ## Vor- und Nachteile
 
@@ -79,11 +87,10 @@ Quelle: @data-cube-hierarchie
 |<span class="text-green">Simpel</span> |<span class="text-red">Redundanzen</span>|
 |<span class="text-green">Schneller Zugriff</span>| <span class="text-red">Anfällig für Anomalien</span>|
 
-: {.center .f-stretch}
-
 # Snowflake-Schema
 
 ## Eigenschaften
+
 - Baut auf Star-Schema auf
   - Ebenfalls zentrale Faktentabelle
 - Dimensionstabellen sind normalisiert
@@ -92,18 +99,15 @@ Quelle: @data-cube-hierarchie
 
 ## ER-Diagramm
 
-<img src="erm_snowflake.svg" class="f-stretch" />
-
-: {.fullscreen .c-stretch}
+<img src="erm_snowflake.svg" />
 
 ## Vor- und Nachteile
+
 |Vorteile       |Nachteile|
 |---------------|----------|
 |<span class="text-green">Schnelle Abfragen auf einzelne Dimensionstabellen</span> |<span class="text-red">Detailierte Abfragen sind durch Joins langsamer</span>|
 |<span class="text-green">Geringe Redundanz -> Geringerer Speicherbedarf</span>| <span class="text-red">Unübersichtlicher</span>|
 |<span class="text-green">Vermeidet Änderungsanomalien</span>| |
-
-: {.f-stretch}
 
 # Vergleich
 
@@ -116,7 +120,7 @@ Quelle: @data-cube-hierarchie
 | Performance | Schnellere Abfragen durch weniger Joins | Langsamere Abfragen durch mehr Joins |
 | Speicherbedarf | Höher (Redundanz) | Geringer (Normalisierung) |
 
-: {.smaller .f-stretch}
+: {.smaller}
 
 
 ## Galaxy-Schema
@@ -125,11 +129,14 @@ Quelle: @data-cube-hierarchie
 - Erweiterung des Star- und Snowflake Schemas: Zwei Faktentabellen
 
 # Fragen?
+
 Gibt es noch Fragen?
 
 # Quellen
+
 ::: {#refs}
 :::
 
 ---
+
 <img src="snowflake-schema-120723_0.png">

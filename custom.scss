@@ -19,14 +19,23 @@ $presentation-author-block-padding-right: if(
   }
 
   table.smaller {
-    font-size: 80%;
+    font-size: 75%;
+  }
+
+  .agenda {
+    font-size: 0.25em !important;
   }
 
   section.slide {
+    position: relative;
     & > .f-stretch {
-      display: grid !important;
-      place-items: center !important;
-
+      max-height: 100% !important;
+    }
+    & > img.f-stretch {
+      // margin: auto !important;
+      // height: 100% !important;
+    }
+    & > table.f-stretch {
       &,
       & thead,
       & thead > tr {
@@ -49,11 +58,12 @@ $presentation-author-block-padding-right: if(
     padding: 0.25em 0;
     display: flex !important;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0.35em;
 
     .quarto-title-authors {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
 
       .quarto-title-author {
         padding-left: $presentation-author-block-padding-left;
