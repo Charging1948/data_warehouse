@@ -1,10 +1,14 @@
 /*-- scss:rules --*/
-$presentation-author-block-padding-left: if($presentation-title-slide-text-align !=left,
-    0.5em,
-    0);
-$presentation-author-block-padding-right: if($presentation-title-slide-text-align !=right,
-    0.5em,
-    0);
+$presentation-author-block-padding-left: if(
+  $presentation-title-slide-text-align !=left,
+  0.5em,
+  0
+);
+$presentation-author-block-padding-right: if(
+  $presentation-title-slide-text-align !=right,
+  0.5em,
+  0
+);
 
 .reveal {
   .text-green {
@@ -13,20 +17,33 @@ $presentation-author-block-padding-right: if($presentation-title-slide-text-alig
   .text-red {
     color: crimson;
   }
-  .c-stretch {
-    &, & > p {
+
+  table.smaller {
+    font-size: 80%;
+  }
+
+  section.slide {
+    & > .f-stretch {
       display: grid !important;
       place-items: center !important;
-    }
-    
-    & > p {
-      margin: 0;
-      height: 100%;
-      width: 100%;
+
+      &,
+      & thead,
+      & thead > tr {
+        width: 100% !important;
+      }
+
+      & thead > tr {
+        display: flex;
+        justify-content: space-evenly;
+
+        & th {
+          flex: 1 0 auto;
+        }
+      }
     }
   }
   .quarto-title-block {
-
     height: 100%;
     padding: 0.25em 0;
     display: flex !important;
@@ -77,9 +94,10 @@ $presentation-author-block-padding-right: if($presentation-title-slide-text-alig
       }
     }
   }
-  
+
   .slide-logo {
     max-height: 5rem !important;
     background: $body-bg;
   }
 }
+

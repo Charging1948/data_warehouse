@@ -39,7 +39,7 @@ auto-agenda:
   heading: Agenda
 ---
 # Einführung
-- Relationale Datenmodellierungstechniken
+- Datenmodellierungstechniken
 - Für Data-Warehouse: "OLAP" - Anwendungen
 - Modelle zum Speichern von:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
@@ -59,14 +59,14 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 
 : {.fullscreen .c-stretch}
 
-## Vor- und Nachteile {.c-stretch}
+## Vor- und Nachteile
 
 |Vorteile       |Nachteile|
 |---------------|----------|
 |<span class="text-green">Simpel</span> |<span class="text-red">Redundanzen</span>|
 |<span class="text-green">Schneller Zugriff</span>| <span class="text-red">Anfällig für Anomalien</span>|
 
-: {.stretch .center .f-stretch}
+: {.center .f-stretch}
 
 # Snowflake-Schema
 
@@ -90,6 +90,8 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 |<span class="text-green">Geringe Redundanz -> Geringerer Speicherbedarf</span>| <span class="text-red">Unübersichtliche</span>|
 |<span class="text-green">Vermeidet Änderungsanomalien</span>| |
 
+: {.f-stretch}
+
 # Vergleich
 
 |Kriterium  |Star-Schema       |Snowflake-Schema|
@@ -99,7 +101,8 @@ Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-H
 | Performance | Schnellere Abfragen durch weniger Joins | Langsamere Abfragen durch mehr Joins |
 | Speicherbedarf | Höher (Redundanz) | Geringer (Normalisierung) |
 
-: {.smaller}
+: {.smaller .f-stretch}
+
 
 # Galaxy-Schema
 
