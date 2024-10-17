@@ -1,10 +1,17 @@
 [
   {
+    "objectID": "presentation.html#dimensionsmodell",
+    "href": "presentation.html#dimensionsmodell",
+    "title": "Snowflake & Stars",
+    "section": "Dimensionsmodell",
+    "text": "Dimensionsmodell\n\n\nQuelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png"
+  },
+  {
     "objectID": "presentation.html#eigenschaften",
     "href": "presentation.html#eigenschaften",
     "title": "Snowflake & Stars",
     "section": "Eigenschaften",
-    "text": "Eigenschaften\n\nEine Faktentabelle\nMaximale Dimensionsstufe 1\nTabellen sind denormalisiert\nOptimiert auf Leseoperationen"
+    "text": "Eigenschaften\n\nEine Faktentabelle\nMaximale Dimensionsstufe: 1\nTabellen sind denormalisiert\nOptimiert auf Leseoperationen"
   },
   {
     "objectID": "presentation.html#er-beispiel",

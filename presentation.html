@@ -30,7 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -360,8 +380,10 @@
 <nav role="doc-toc"> 
 <h2 id="toc-title">Inhaltsverzeichnis</h2>
 <ul>
-<li><a href="#/einführung" id="/toc-einführung">Einführung</a></li>
+<li><a href="#/einführung" id="/toc-einführung">Einführung</a>
+<ul>
 <li><a href="#/dimensionsmodell" id="/toc-dimensionsmodell">Dimensionsmodell</a></li>
+</ul></li>
 <li><a href="#/stern-schema" id="/toc-stern-schema">Stern-Schema</a>
 <ul>
 <li><a href="#/eigenschaften" id="/toc-eigenschaften">Eigenschaften</a></li>
@@ -376,13 +398,15 @@
 </ul></li>
 <li><a href="#/vergleich" id="/toc-vergleich">Vergleich</a></li>
 <li><a href="#/galaxy-schema" id="/toc-galaxy-schema">Galaxy-Schema</a></li>
-<li><a href="#/fragen" id="/toc-fragen">Fragen?</a>
+<li><a href="#/fragen" id="/toc-fragen">Fragen?</a></li>
+<li><a href="#/quellen" id="/toc-quellen">Quellen</a>
 <ul>
 <li></li>
 </ul></li>
 </ul>
 </nav>
 </section>
+<section>
 <section id="einführung" class="title-slide slide level1 center">
 <h1>Einführung</h1>
 <ul>
@@ -395,15 +419,13 @@
 </ul></li>
 </ul>
 </section>
-
-<section id="dimensionsmodell" class="title-slide slide level1 center">
-<h1>Dimensionsmodell</h1>
+<section id="dimensionsmodell" class="slide level2">
+<h2>Dimensionsmodell</h2>
 
 <img src="Data-Cube-mit-Hirarchie.png" class="r-stretch"><div class="attribution">
 <p>Quelle: https://data-science-blog.com/wp-content/uploads/2019/02/Data-Cube-mit-Hirarchie.png</p>
 </div>
-</section>
-
+</section></section>
 <section>
 <section id="stern-schema" class="title-slide slide level1 center">
 <h1>Stern-Schema</h1>
@@ -413,7 +435,7 @@
 <h2>Eigenschaften</h2>
 <ul>
 <li>Eine Faktentabelle</li>
-<li>Maximale Dimensionsstufe 1</li>
+<li>Maximale Dimensionsstufe: 1</li>
 <li>Tabellen sind denormalisiert</li>
 <li>Optimiert auf Leseoperationen</li>
 </ul>
@@ -550,10 +572,19 @@
 </ul>
 </section>
 
-<section>
 <section id="fragen" class="title-slide slide level1 center">
 <h1>Fragen?</h1>
 <p>Gibt es noch Fragen?</p>
+</section>
+
+<section>
+<section id="quellen" class="title-slide slide level1 smaller scrollable">
+<h1>Quellen</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-noauthor2024Architectinga" class="csl-entry" role="listitem">
+Kumar, Anjani [Verfasser/in], Abhishek [Verfasser/in] Mishra, und Sanjeev [Verfasser/in] Kumar, Hrsg. 2024. <span>„Architecting a Modern Data Warehouse for Large Enterprises: Build Multi-cloud Modern Distributed Data Warehouses with Azure and AWS“</span>. Berkeley, CA: Apress.
+</div>
+</div>
 </section>
 <section class="slide level2">
 
