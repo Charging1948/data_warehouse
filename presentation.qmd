@@ -40,10 +40,12 @@ auto-agenda:
 ---
 # Einführung
 - Relationale Datenmodellierungstechniken
-- Für Data-Warehouse: "OLAP" - Analysen
+- Für Data-Warehouse: "OLAP" - Anwendungen
 - Modelle zum Speichern von:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
   - Eigenschaften der Fakten (Detailstufen)
+
+<img src="Data-Cube-mit-Hirarchie.png">
 
 # Stern-Schema
 
