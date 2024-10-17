@@ -32,6 +32,6 @@
     "href": "presentation.html#vor--und-nachteile-1",
     "title": "Snowflake & Stars",
     "section": "Vor- und Nachteile",
-    "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSchnelle Abfragen auf einzelne Dimensionstabellen\nDetailierte Abfragen sind durch Joins langsamer\n\n\nGeringe Redundanz -&gt; Geringerer Speicherbedarf\nUnübersichtliche\n\n\nVermeidet Änderungsanomalien"
+    "text": "Vor- und Nachteile\n\n\n\n\n\n\n\nVorteile\nNachteile\n\n\n\n\nSchnelle Abfragen auf einzelne Dimensionstabellen\nDetailierte Abfragen sind durch Joins langsamer\n\n\nGeringe Redundanz -&gt; Geringerer Speicherbedarf\nUnübersichtlicher\n\n\nVermeidet Änderungsanomalien"
   }
 ]
