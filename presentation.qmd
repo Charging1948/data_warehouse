@@ -50,7 +50,7 @@ csl: ieee.csl
 
 - Datenmodellierungstechniken
 - Für Data-Warehouse: "OLAP" - Anwendungen
-- Modelle zum Speichern von:
+- Modelle zum Speichern von großen Datenmengen:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
   - Eigenschaften der Fakten (Detailstufen)
 
