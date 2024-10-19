@@ -60,6 +60,6 @@
     "href": "presentation.html#galaxy-schema",
     "title": "Snowflake & Stars",
     "section": "Galaxy-Schema",
-    "text": "Galaxy-Schema\n\nAuch Fact Constellation-Schema genannt\nErweiterung des Star- und Snowflake Schemas: Zwei/Mehrere Faktentabellen\nFaktentabellen teilen sich die Dimensionstabellen\nBeispiel: Krankenhaus\n\nFaktentabellen:\n\nMedizinische Eingriffe\nMedikamentenausgabe\n\nDimensionstabellen:\n\nPatienten\nDoktor\nKrankenhaus\nAdresse"
+    "text": "Galaxy-Schema\n\nAuch Fact Constellation-Schema genannt\nErweiterung des Star- und Snowflake Schemas: Zwei/Mehrere Faktentabellen\nFaktentabellen teilen sich die Dimensionstabellen\nBeispiel: Krankenhaus\n\nFaktentabellen: Med. Eingriffe, Medikamentenausgabe\nDimensionstabellen: Patienten, Doktor, Krankenhaus"
   }
 ]
