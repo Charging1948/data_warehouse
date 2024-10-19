@@ -129,14 +129,8 @@ Quelle: @data-cube-hierarchie
 - Erweiterung des Star- und Snowflake Schemas: Zwei/Mehrere Faktentabellen
 - Faktentabellen teilen sich die Dimensionstabellen
 - Beispiel: Krankenhaus
-  - Faktentabellen:
-    - Medizinische Eingriffe
-    - Medikamentenausgabe
-  - Dimensionstabellen:
-    - Patienten
-    - Doktor
-    - Krankenhaus
-    - Adresse
+  - Faktentabellen: Med. Eingriffe, Medikamentenausgabe
+  - Dimensionstabellen: Patienten, Doktor, Krankenhaus
 
 # Fragen?
 
