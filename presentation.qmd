@@ -59,7 +59,7 @@ csl: ieee.csl
 <img src="Data-Cube-mit-Hirarchie.png" >
 
 ::: {.attribution}
-Quelle: @data-cube-hierarchie
+Quelle: @datascienceblogOLAPWrfel
 :::
 
 :::{.notes}
@@ -132,7 +132,7 @@ Quelle: @data-cube-hierarchie
   - Faktentabellen: Med. Eingriffe, Medikamentenausgabe
   - Dimensionstabellen: Patienten, Doktor, Krankenhaus
 
-# Fragen?
+# Vielen Dank für die Aufmerksamkeit
 
 Gibt es noch Fragen?
 
@@ -142,5 +142,8 @@ Gibt es noch Fragen?
 :::
 
 ---
-
 <img src="snowflake-schema-120723_0.png">
+
+::: {.attribution}
+Quelle: @databricksWhatSnowflake
+:::
