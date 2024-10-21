@@ -27,7 +27,6 @@ $presentation-author-block-padding-right: if(
   }
 
   section.slide {
-    position: relative;
     & > .f-stretch {
       max-height: 100% !important;
     }

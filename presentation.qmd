@@ -136,12 +136,15 @@ Quelle: @datascienceblogOLAPWrfel
 
 Gibt es noch Fragen?
 
-# Quellen
+# Quellen {visibility="hidden"}
+
+## Quellen {.fullscreen}
 
 ::: {#refs}
 :::
 
----
+## {.fullscreen}
+
 <img src="snowflake-schema-120723_0.png">
 
 ::: {.attribution}
