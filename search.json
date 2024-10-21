@@ -61,5 +61,19 @@
     "title": "Snowflake & Stars",
     "section": "Galaxy-Schema",
     "text": "Galaxy-Schema\n\nAuch Fact Constellation-Schema genannt\nErweiterung des Star- und Snowflake Schemas: Zwei/Mehrere Faktentabellen\nFaktentabellen teilen sich die Dimensionstabellen\nBeispiel: Krankenhaus\n\nFaktentabellen: Med. Eingriffe, Medikamentenausgabe\nDimensionstabellen: Patienten, Doktor, Krankenhaus"
+  },
+  {
+    "objectID": "presentation.html#quellen-1",
+    "href": "presentation.html#quellen-1",
+    "title": "Snowflake & Stars",
+    "section": "Quellen",
+    "text": "Quellen\n\n\n[1] J. Dörner, „OLAP-Würfel — data-science-blog.com“.\n\n\n[2] „What is a Snowflake Schema? — databricks.com“.\n\n\n[3] A. [Verfasser/in]. Kumar, A. [Verfasser/in]. Mishra, und S. [Verfasser/in]. Kumar, Hrsg., „Architecting a Modern Data Warehouse for Large Enterprises: Build Multi-cloud Modern Distributed Data Warehouses with Azure and AWS“. Apress, Berkeley, CA, 2024."
+  },
+  {
+    "objectID": "presentation.html#section",
+    "href": "presentation.html#section",
+    "title": "Snowflake & Stars",
+    "section": "",
+    "text": "Quelle: [2]"
   }
 ]
