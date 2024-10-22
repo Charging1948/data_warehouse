@@ -132,7 +132,8 @@ Quelle: @datascienceblogOLAPWrfel
   - Faktentabellen: Med. Eingriffe, Medikamentenausgabe
   - Dimensionstabellen: Patienten, Doktor, Krankenhaus
 
-# Vielen Dank für die Aufmerksamkeit
+# Vielen Dank für die Aufmerksamkeit {visibility="hidden"}
+## Vielen Dank für die Aufmerksamkeit {.r-fit-text}
 
 Gibt es noch Fragen?
 
