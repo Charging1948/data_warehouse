@@ -52,7 +52,7 @@ csl: ieee.csl
 - Für Data-Warehouse: "OLAP" - Anwendungen
 - Modelle zum Analysieren von großen Datenmengen:
   - Fakten (Kennzahlen oder Messwerte, die analysiert oder veranschaulicht werden)
-  - Eigenschaften der Fakten (Detailstufen)
+  - Eigenschaften der Fakten (Detailstufen/Dimensionen)
 
 ## Dimensionsmodell {.fullscreen}
 
